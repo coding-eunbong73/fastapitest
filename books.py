@@ -35,7 +35,7 @@ async def get_direction(direction_name: DirectionName):
 async def read_favorite_book():
     return {"book_title":"My Favorite Book"}
 
-@app.get("/books/{book_id}")
-async def read_book(book_id:int):
-    return {"book_title":book_id}
+@app.get("/books/{book_name}")
+async def read_book(book_name:str):
+    return BOOKS[book_name]
 
