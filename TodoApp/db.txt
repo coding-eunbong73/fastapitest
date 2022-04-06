@@ -1,0 +1,10 @@
+sqlite3 todos.db
+
+select * from users;
+insert into todos (title, description, priority, complete, owner_id) values ("Take out the dog", "he nee ds to use the bathroom", 5, false, 1);
+insert into todos (title, description, priority, complete, owner_id) values ("Cut the grass", "it is get ting long", 5, false, 1);
+insert into todos (title, description, priority, complete, owner_id) values ("Make dinner", "kids are ho me", 5, false, 2);
+
+.mode table
+select * from todos;
+select * from users;
