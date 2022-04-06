@@ -1,0 +1,15 @@
+# virtual environment
+pip install venv
+
+# fast API
+pip install fastapi[all]
+
+# CryptContext
+pip install "passlib[bcrypt]"
+
+# JWT Token
+pip install "python-jose[cryptography]"
+
+# PostgreSQL Library
+pip install psycopg2-binary
+
