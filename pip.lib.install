@@ -13,3 +13,6 @@ pip install "python-jose[cryptography]"
 # PostgreSQL Library
 pip install psycopg2-binary
 
+# MySQL Library
+pip install pymysql
+
