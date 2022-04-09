@@ -16,3 +16,6 @@ pip install psycopg2-binary
 # MySQL Library
 pip install pymysql
 
+# template library
+pip install aiofiles
+pip install jinja2

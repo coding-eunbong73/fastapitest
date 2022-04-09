@@ -2,6 +2,7 @@ from sqlalchemy import Boolean, Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from database import Base
 
+
 class Users(Base):
     __tablename__ = "users"
 
@@ -15,6 +16,7 @@ class Users(Base):
 
     todos = relationship("Todos", back_populates="owner")
 
+
 class Todos(Base):
     __tablename__ = "todos"
 
@@ -26,4 +28,3 @@ class Todos(Base):
     owner_id = Column(Integer, ForeignKey("users.id"))
 
     owner = relationship("Users", back_populates="todos")
-
