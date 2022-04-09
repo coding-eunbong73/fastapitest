@@ -8,3 +8,6 @@ uvicorn books2:app --reload
 
 #routertest 테스트
 uvicorn routertest:app --reload
+
+#api 테스트
+uvicorn main:app --reload
