@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL");
 if SQLALCHEMY_DATABASE_URL is None:
-    SQLALCHEMY_DATABASE_URL = "sqlite:///./todos.db"
+    SQLALCHEMY_DATABASE_URL = "sqlite:///./data/todos.db"
 else:
     if SQLALCHEMY_DATABASE_URL.startswith("postgres://"):
         SQLALCHEMY_DATABASE_URL = SQLALCHEMY_DATABASE_URL.replace("postgres://", "postgresql://", 1)
