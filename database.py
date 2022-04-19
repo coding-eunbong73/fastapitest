@@ -16,7 +16,7 @@ print(SQLALCHEMY_DATABASE_URL)
 # MYSQL Series
 # SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:test1234!@127.0.0.1:3306/todoapp"
 
-if SQLALCHEMY_DATABASE_URL is None:
+if SQLALCHEMY_DATABASE_URL.startswith("sqlite"):
     engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
 else:
     engine = create_engine(SQLALCHEMY_DATABASE_URL)
